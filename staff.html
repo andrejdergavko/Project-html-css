@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Персонал</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="libs/bootstrap/js/bootstrap.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" type="text/css" href="css/fonts.css">
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/header.css">
+  <link rel="stylesheet" type="text/css" href="css/intro.css">
+  <link rel="stylesheet" type="text/css" href="css/staff.css">
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
+</head>
+<body>
+
+
+  <!-- Header 
+  ========================-->
+  <header id="header" class="header">
+    <div class="header__info-box">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__contacts">
+            <div class="header__phones">
+              <p>Call-центр: +375 33 251 44 55</p>
+              <p>+375 33 111 44 55</p>
+            </div>
+            <div class="header__email">
+              e-mail: grodsnoclinic@mail.ru
+            </div>
+          </div>
+          <div class="tool-box header__tool-box">
+            <a class="tool-box__link" href="https://vk.com" target="_blank">
+              <img class="tool-box__icon" src="img/icon/vk1.png" alt="В контакте">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/vk2.png" alt="В контакте">
+            </a>
+            <a class="tool-box__link" href="https://www.instagram.com" target="_blank">
+              <img class="tool-box__icon" src="img/icon/instagram1.png" alt="instagram">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/instagram2.png" alt="instagram">
+            </a>
+            <a class="tool-box__link" href="https://www.facebook.com" target="_blank">
+              <img class="tool-box__icon" src="img/icon/facebook1.png" alt="facebook">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/facebook2.png" alt="facebook">
+            </a>
+            <a class="tool-box__link" href="https://web.telegram.org" target="_blank">
+              <img class="tool-box__icon" src="img/icon/telegram1.png" alt="telegram">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/telegram2.png" alt="telegram">
+            </a>
+            <button id="btn-search-open" class="tool-box__search">
+              <img class="tool-box__icon" src="img/icon/search1.png" alt="search">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/search2.png" alt="search">
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="search-box" class="search-box header__search-box">
+        <div class="container">
+          <div class="search__wrapper">
+            <img class="search-box__icon" src="img/icon/search-box.png" alt="Поиск">
+            <form class="search-box__form" action="">
+              <input id="search-input" class="search-box__intut" type="search" name="search" placeholder="например: геникология">
+            </form>
+            <button id="btn-search-close" class="search-box__button">
+              <img class="search-box__icon" src="img/icon/exit.png" alt="Закрыть">
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /.header__info-box -->
+
+    <div class="container">
+      <div class="header__wrapper">
+        <a class="header__logo" href="index.html">Grodno clinic <span class="header__plus">+</span></a>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">О клинике</a></li>
+            <li class="nav__item"><a class="nav__link" href="services.html">Услуги и цены</a></li>
+            <li class="nav__item"><a class="nav__link nav__link_active" href="staff.html">Врачи</a></li>
+            <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+          </ul>
+        </nav> <!-- /.nav -->
+
+        <div class="burger-menu header__burger-menu">
+          <button id="burger-button" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+          </button>
+          <div id="burger-slider" class="burger-menu__slider">
+            <nav class="nav burger-menu__nav">
+              <ul class="nav__list nav__list_mobile">
+                <li class="nav__item"><a class="nav__link" href="index.html">Главная</a></li>
+                <li class="nav__item"><a class="nav__link" href="about.html">О клинике</a></li>
+                <li class="nav__item"><a class="nav__link" href="services.html">Услуги и цены</a></li>
+                <li class="nav__item"><a class="nav__link nav__link_active" href="staff.html">Врачи</a></li>
+                <li class="nav__item"><a class="nav__link" href="contacts.html">Контакты</a></li>
+              </ul>
+            </nav>
+          </div> <!-- /.burger-menu__slider -->
+        </div> <!-- /.burger-menu -->
+      </div>
+    </div> <!-- /.container -->
+  </header> <!-- /.header -->
+
+
+  <!-- Main
+  ========================-->
+  <main class="main">
+
+
+    <!-- Intro 
+    ========================-->
+    <section class="intro">
+      <div class="container">
+        <div class="intro__inner">
+          <h2 class="intro__title">Наш персонал- наша гордость</h2>
+          <p class="intro__text">Каждый специалист нашей Клиники отвечает за определенную область медицины, что позволяет клиенту целенаправленно попасть к врачу соответствующей специализации и квалификации.</p>
+        </div>
+      </div>
+    </section> <!-- /.intro -->
+
+
+    <!-- Breadcrumbs 
+    ========================-->
+    <div class="container">
+      <div class="breadcrumbs">
+        <a class="breadcrumbs__link" href="index.html">Главная</a>
+        <a class="breadcrumbs__link" href="staff.html">Врачи</a>
+      </div>
+    </div>
+
+
+    <!-- Staff
+    ========================-->
+    <div class="container">
+      <section class="staff">
+
+        <div class="staff__title section-title">
+          <a href="staff.html">Врачи</a>
+        </div>
+
+        <div class="staff__grid">
+          
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff1.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Бойко</span> Владимир Романович</h3>
+              <p class="staff__position">Хирург</p>
+              <p><span class="staff__label">Стаж:</span> 10 лет</p>
+              <p><span class="staff__label">Категория:</span> высшая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff2.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Карпицкий</span> Андрей Валерьевич</h3>
+              <p class="staff__position">Пластический хирург</p>
+              <p><span class="staff__label">Стаж:</span> 7 лет</p>
+              <p><span class="staff__label">Категория:</span> первая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff3.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Войлов</span> Андрей Андреевич</h3>
+              <p class="staff__position">Нарколог</p>
+              <p><span class="staff__label">Стаж:</span> 11 лет</p>
+              <p><span class="staff__label">Категория:</span> высшая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff4.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Качинская</span> Анна Витальевна</h3>
+              <p class="staff__position">Косметолог</p>
+              <p><span class="staff__label">Стаж:</span> 8 лет</p>
+              <p><span class="staff__label">Категория:</span> высшая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff5.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Савицкая</span> Анна Агатовна</h3>
+              <p class="staff__position">Терапевт</p>
+              <p><span class="staff__label">Стаж:</span> 5 лет</p>
+              <p><span class="staff__label">Категория:</span> вторая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff6.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Жук</span> Лариса Станиславовна</h3>
+              <p class="staff__position">Дерматолог</p>
+              <p><span class="staff__label">Стаж:</span> 11 лет</p>
+              <p><span class="staff__label">Категория:</span> высшая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff7.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Попова</span> Оксана Артемовна</h3>
+              <p class="staff__position">Хирург</p>
+              <p><span class="staff__label">Стаж:</span> 10 лет</p>
+              <p><span class="staff__label">Категория:</span> высшая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff8.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Адамян</span> Катерина Ромуальдовна</h3>
+              <p class="staff__position">Невропотолог</p>
+              <p><span class="staff__label">Стаж:</span> 7 лет</p>
+              <p><span class="staff__label">Категория:</span> высшая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff9.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Алисовна</span> Оксана Викторовна</h3>
+              <p class="staff__position">Окулист</p>
+              <p><span class="staff__label">Стаж:</span> 15 лет</p>
+              <p><span class="staff__label">Категория:</span> высшая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+          <div class="staff__item">
+            <img class="staff__img" src="img/staff/staff10.jpg" alt="Медецинский центр">
+            <div class="staff__info">
+              <h3 class="staff__name"><span class="staff__surname">Волковна</span> Алиса Сергеевна</h3>
+              <p class="staff__position">Педиатор</p>
+              <p><span class="staff__label">Стаж:</span> 3 лет</p>
+              <p><span class="staff__label">Категория:</span> высшая</p>
+              <p><span class="staff__label">Работает:</span></p>
+              <p class="staff__adress">г. Гродно, ул. Пролетарская, 8</p>
+              <a class="staff__link" href="#">Подробнее</a>
+            </div>
+          </div>
+
+        </div> <!-- /.staff__grid -->
+        
+        <button class="staff__btn button">Показать еще</button>
+        
+      </section> <!-- /.staff -->
+    </div> <!-- /.container -->
+  </main> <!-- /.main -->
+
+
+  <!-- Footer 
+  ========================-->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__about">
+          <h3 class="footer__title">Медецинский центр Grodno Clinic</h3>
+          <p>является медицинским учреждением, оказывающим помощь женщинам, мужчинам и детям всех возрастов.</p>
+        </div>
+        <div class="footer__tel">
+          <h3 class="footer__title">Звоните нам</h3>
+          <p>+375 33 251 44 55 (mts)</p>
+          <p>+375 33 111 44 55 (velcom)</p>
+        </div>
+        <div class="footer__email">
+          <h3 class="footer__title">Электронная почта</h3>
+          <p>grodsnoclinic@mail.ru</p>
+        </div>
+        <div class="footer__social-title">
+          <h3 class="footer__title">Мы в соцсетях</h3>
+        </div>
+        <div class="footer__social tool-box">
+            <a class="tool-box__link" href="https://vk.com" target="_blank">
+              <img class="tool-box__icon" src="img/icon/vk1.png" alt="В контакте">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/vk2.png" alt="В контакте">
+            </a>
+            <a class="tool-box__link" href="https://www.instagram.com" target="_blank">
+              <img class="tool-box__icon" src="img/icon/instagram1.png" alt="instagram">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/instagram2.png" alt="instagram">
+            </a>
+            <a class="tool-box__link" href="https://www.facebook.com" target="_blank">
+              <img class="tool-box__icon" src="img/icon/facebook1.png" alt="facebook">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/facebook2.png" alt="facebook">
+            </a>
+            <a class="tool-box__link" href="https://web.telegram.org" target="_blank">
+              <img class="tool-box__icon" src="img/icon/telegram1.png" alt="telegram">
+              <img class="tool-box__icon tool-box__icon_hover" src="img/icon/telegram2.png" alt="telegram">
+            </a>
+          </div>
+        <form class="footer__form" action="">
+          <h3 class="footer__title footer__title_lg">Задать вопрос</h3>
+          <div class="footer__contacts">
+            <label class="footer__label" for="foot-form-name">Фамилия Имя Отчество:</label>
+            <input class="footer__input" id="foot-form-name" type="text" name="name"  placeholder="Сергеев Сергей Сергеевич" required>
+            <label class="footer__label" for="foot-form-tel">Контактный номер телефона:</label>
+            <input class="footer__input" id="foot-form-tel" type="tel" name="tel" required placeholder="+375333214412">
+            <label class="footer__label" for="foot-form-email">Адрес электронной почты:</label>
+            <input class="footer__input" id="foot-form-email" type="email" name="email" required placeholder="grodnoclinic@mail.ru">
+            <input class="footer__input footer__input_submit" type="submit" name="submit" value="Отправить">
+          </div>
+          <div class="footer__question">
+            <h3 class="footer__title footer__title_xs">Задать вопрос</h3>
+            <label class="footer__label" for="foot-form-question">Ваш вопрос:</label>
+            <textarea class="footer__input footer__input_textarea" id="foot-form-question" name="question" required placeholder="Ваш вопрос"></textarea>
+          </div>
+        </form>
+        <div class="footer__info">© 2019 ООО "Гродно Клиник"</div>
+        <div class="footer__signature">Сайт разработал: Дергавко Андрей</div>
+      </div>
+    </div> <!-- /.container -->
+  </footer><!-- /.footer -->
+
+
+  <!-- Script 
+  ========================-->
+  <script src="js/hiding-header.js"></script>
+  <script src="js/header-search.js"></script>
+  <script src="js/burger-menu.js"></script>
+</body>
+</html>
